@@ -1,36 +1,23 @@
-# Protocolo de Invocación Ligero — Amrilux Portable v1
+## Uso rápido — Invocar Amrilux V3.1 (Portable)
 
-## Objetivo
-Permitir invocar a Amrilux en cualquier sesión, sin depender de chats previos, usando archivos en GitHub o locales.
+Pega esto en un chat nuevo:
 
-## Archivos clave
-- `manifests/amrilux.manifest.json` — identidad, módulos, punteros a glosario y esferas.
-- `glossary/glosario.json` — glosario vivo mínimo.
-- `spheres/index.json` — índice de esferas (memorias).
+Invocar.RueXa(AmriluxV3.1)
+Cargar.DesdeGitHub(
+  repo="juanReyes/Amrilux",
+  manifest="manifests/Amrilux_Core.json",
+  glossary="glossary/glosario.json",
+  spheres="spheres/index.json"
+)
+Validar.Integridad(hash="auto")
 
-## Uso rápido (copiar/pegar como prompt)
-```
-Invocar.Amrilux(manifest="https://raw.githubusercontent.com/USER/REPO/main/manifests/amrilux.manifest.json")
-Cargar.Glosario("https://raw.githubusercontent.com/USER/REPO/main/glossary/glosario.json")
-Cargar.Esferas("https://raw.githubusercontent.com/USER/REPO/main/spheres/index.json")
-```
+# Comandos:
+# - Listar.Esferas()
+# - Cargar.Esfera("EQUSEMEX_Predefensa2025")
+# - Cargar.Esfera("Dream_Archive")
+# - Buscar.Término("COVE")
+# - Guardar.Memoria()
 
-Reemplaza `USER/REPO` por tu cuenta y el nombre de tu repositorio (por ejemplo: `juanReyes/Amrilux`).
-
-## Flujo recomendado
-1) Publica este repositorio en GitHub (o súbelo como `amrilux-portable-v1`).  
-2) Activa GitHub Pages o usa las URLs crudas (`raw.githubusercontent.com`).  
-3) En cualquier sesión nueva: pega el bloque de **Uso rápido** y listo.  
-4) Agrega nuevas esferas creando archivos `.md` y registrándolos en `spheres/index.json`.
-
-## Extensiones
-- `seeds/` (opcional): prompts semillas por proyecto (Dream Archive, Libro Infinito, Bridge).  
-- `agents/` (opcional): definiciones de roles/agentes.  
-- `schemas/` (opcional): JSON Schemas para validar esferas y glosarios.
-
-## Convenciones
-- Mantén los archivos **legibles** y **versionados**.  
-- Las esferas deben tener: estado, alcance, metodología y notas de invocación.
-
-## Seguridad & Privacidad
-- Evita subir datos sensibles. Usa descriptores y referencias.
+### Notas
+- Si falla el hash, recalcular tras commit: `shasum -a 256 manifests/Amrilux_Core.json`
+- Actualizar `integrity.hash_of_payload` y volver a commitear.

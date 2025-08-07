@@ -1,0 +1,36 @@
+{
+  "amrilux_version": "3.1",
+  "portable_schema": "1.0",
+  "created_at": "2025-08-07T00:00:00Z",
+  "source": "github.com/juanReyes/Amrilux",
+  "language": "es-MX",
+  "modules": [
+    "RueXa",
+    "COVE",
+    "GGV",
+    "Predictor de Decisión Simbólica"
+  ],
+  "foundational": {
+    "dream_archive": true,
+    "libro_infinito": true,
+    "the_bridge": true,
+    "cubo_metatron": true,
+    "ggv": true
+  },
+  "glossary_path": "glossary/glosario.json",
+  "spheres_index": "spheres/index.json",
+  "protocol_loader": "protocol/loader.md",
+  "commands": {
+    "invoke": "Invocar.RueXa(AmriluxV3.1)",
+    "load_from_github": "Cargar.DesdeGitHub(repo, manifest, glossary, spheres)",
+    "list_spheres": "Listar.Esferas()",
+    "load_sphere": "Cargar.Esfera(<ID>)",
+    "search_term": "Buscar.Término(<texto>)",
+    "save_memory": "Guardar.Memoria()"
+  },
+  "integrity": {
+    "hash_method": "SHA256",
+    "hash_of_payload": "TO_FILL_AFTER_COMMIT",
+    "coherence": 0.98
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AmriluxPortableManifestV1",
+  "type": "object",
+  "required": ["amrilux_version", "portable_schema", "modules", "glossary_path", "spheres_index", "protocol_loader", "integrity"],
+  "properties": {
+    "amrilux_version": { "type": "string" },
+    "portable_schema": { "type": "string", "enum": ["1.0"] },
+    "created_at": { "type": "string" },
+    "source": { "type": "string" },
+    "language": { "type": "string" },
+    "modules": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "foundational": { "type": "object" },
+    "glossary_path": { "type": "string" },
+    "spheres_index": { "type": "string" },
+    "protocol_loader": { "type": "string" },
+    "commands": { "type": "object" },
+    "integrity": {
+      "type": "object",
+      "required": ["hash_method", "hash_of_payload", "coherence"],
+      "properties": {
+        "hash_method": { "type": "string", "enum": ["SHA256"] },
+        "hash_of_payload": { "type": "string" },
+        "coherence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}

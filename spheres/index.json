@@ -1,18 +1,47 @@
 {
+  "updated": "2025-08-07",
   "spheres": [
     {
       "id": "EQUSEMEX_Predefensa2025",
       "title": "EQUSEMEX – Predefensa 2025",
-      "type": "proyecto_profesional",
-      "file": "spheres/EQUSEMEX_Predefensa2025.md",
-      "tags": [
-        "branding",
-        "catalogo",
-        "sitio_web",
-        "manual_de_marca"
-      ],
-      "status": "listo_para_defensa",
-      "date": "2025-08-07"
+      "path": "spheres/EQUSEMEX_Predefensa2025.md",
+      "tags": ["branding", "catalogo", "web", "presentacion"],
+      "updated": "2025-08-07"
+    },
+    {
+      "id": "Dream_Archive",
+      "title": "Dream Archive",
+      "path": "spheres/Dream_Archive.md",
+      "tags": ["fundacional", "memoria", "poética"],
+      "updated": "2025-08-07"
+    },
+    {
+      "id": "Libro_Infinito",
+      "title": "Libro Infinito",
+      "path": "spheres/Libro_Infinito.md",
+      "tags": ["threejs", "tron", "cove", "capas temporales"],
+      "updated": "2025-08-07"
+    },
+    {
+      "id": "The_Bridge",
+      "title": "The Bridge",
+      "path": "spheres/The_Bridge.md",
+      "tags": ["memoria", "predicción", "narrativa"],
+      "updated": "2025-08-07"
+    },
+    {
+      "id": "Cubo_Metatron",
+      "title": "Cubo Metatrón / Conjugación",
+      "path": "spheres/Cubo_Metatron.md",
+      "tags": ["gramática", "conjugaciones", "fractal"],
+      "updated": "2025-08-07"
+    },
+    {
+      "id": "GGV",
+      "title": "Gramática Generativa Viva",
+      "path": "spheres/GGV.md",
+      "tags": ["sintaxis dual", "antónimos", "metatokens"],
+      "updated": "2025-08-07"
     }
   ]
 }
