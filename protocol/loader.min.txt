@@ -1,0 +1,3 @@
+Invocar.Amrilux(manifest="manifests/amrilux.manifest.json")
+Cargar.Glosario("glossary/glosario.json")
+Cargar.Esferas("spheres/index.json")

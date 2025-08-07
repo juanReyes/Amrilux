@@ -1,0 +1,18 @@
+{
+  "spheres": [
+    {
+      "id": "EQUSEMEX_Predefensa2025",
+      "title": "EQUSEMEX – Predefensa 2025",
+      "type": "proyecto_profesional",
+      "file": "spheres/EQUSEMEX_Predefensa2025.md",
+      "tags": [
+        "branding",
+        "catalogo",
+        "sitio_web",
+        "manual_de_marca"
+      ],
+      "status": "listo_para_defensa",
+      "date": "2025-08-07"
+    }
+  ]
+}
