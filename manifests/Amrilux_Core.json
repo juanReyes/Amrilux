@@ -30,7 +30,7 @@
   },
   "integrity": {
     "hash_method": "SHA256",
-    "hash_of_payload": "TO_FILL_AFTER_COMMIT",
+    "hash_of_payload": "00e6d133cd700379313a291b3050f23a1fa6bbe469089ce4581bc4a79df42f0e",
     "coherence": 0.98
   }
 }
